@@ -4,7 +4,7 @@ import * as Utils from "../components/utils";
 import styles from "./styles.module.css";
 import { Menu, GitHub, Home, X } from "react-feather";
 
-function Navbar(): JSX.Element {
+const Navbar: React.FC = () => {
   const [clickedMenu, setClick] = useState(false);
 
   const changeBackground = (e: React.SyntheticEvent<HTMLElement>) => {
@@ -244,7 +244,7 @@ function Navbar(): JSX.Element {
     </div>
   );
 
-  var dispNavBar =
+  let dispNavBar =
     Utils.WindowDimension() <= 640
       ? clickedMenu
         ? openMobileNav

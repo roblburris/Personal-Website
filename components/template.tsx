@@ -7,7 +7,7 @@ interface Props {
   children: JSX.Element
 }
 
-function Template(Props: Props): JSX.Element {
+const Template = (Props: Props): JSX.Element => {
   const appMobileStyle: React.CSSProperties = {
     textAlign: "center",
     display: "grid",
@@ -60,7 +60,7 @@ function Template(Props: Props): JSX.Element {
             }}
           >
             Made by Robert Burris. Built in React using TypeScript. Last
-            updated December 2020.
+            updated January 2021.
           </div>
         </div>
       </div>

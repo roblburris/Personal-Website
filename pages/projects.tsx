@@ -1,7 +1,7 @@
 import React from "react";
 import Template from "../components/template";
 
-function Projects(): JSX.Element {
+const Projects: React.FC = () => {
   return (
     <Template>
       <div style={{ gridColumn: 2, gridRow: 2 }}>
@@ -18,6 +18,29 @@ function Projects(): JSX.Element {
           page.
         </p>
 
+        <hr
+          style={{
+            borderWidth: 0,
+            height: "1px",
+            color: "gray",
+            backgroundColor: "#e4e8eb",
+          }}
+        />
+        
+        
+        <h3 style={{ textDecoration: "underline" }}>
+          {" "}
+          <a
+            href="https://github.com/roblburris/FaceRecogBackend"
+            style={{ color: "black" }}
+          >
+            FaceNote - Facial Recognition App
+          </a>
+        </h3>
+        <p>
+          In October 2020, a friend and I attended Dubhacks, an annual Hackathon at the University of Washington, where we built a tool for easily getting general information on people in a Zoom call. With everything going online due to the ongoing COVID-19 pandemic, we wanted to create something that would make it easier for people in their Zoom meetings to remember people so we ended building FaceNote which is an Electron.js desktop app that uses facial recognition to return details on a participant in a Zoom call. I worked on the backend of FaceNote where I designed the database using MongoDB and integrated it into our Go HTTP backend. 
+        </p>
+        
         <hr
           style={{
             borderWidth: 0,

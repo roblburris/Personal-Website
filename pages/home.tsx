@@ -1,7 +1,7 @@
 import React from "react";
 import Template from "../components/template";
 
-function Home(): JSX.Element {
+const Home: React.FC = () => {
   return (
     <Template>
       <div>
@@ -16,19 +16,17 @@ function Home(): JSX.Element {
         <ul>
           <li>
             {" "}
-            <b>Current Work:</b> Undergraduate Researcher in the UW School of
-            Medicine (nerve rehabilitation app development in Flutter) and the
-            Allen School of Computer Science and Engineering (computational
-            biology & machine learning omics research).{" "}
+            <b>Current Work:</b> Undergraduate Researcher at the Wang Lab For
+            Computational Biology in the Allen School of Computer Science and
+            Engineering. At the moment, I'm currently applying statistics and
+            machine learning to look at prostate cancer. {" "}
           </li>
 
           <li>
             {" "}
-            <b>Current Coursework:</b> Data Structures and Parallelism (CSE332),
-            Hardware/Software Interface (CSE351), System and Software Tools
-            (CSE391), Second Year Accelerated Honors Calculus (MATH334),
-            Bioscientific Vocabularly Building from Latin and Greek Roots
-            (CLAS205)
+            <b>Current Coursework:</b> Foundations of Computing II (CSE 312),
+            Systems Programming (CSE 333), Probability I (MATH 394), Introductory
+            Linguistics (LING 200)
           </li>
 
           <li>
@@ -40,8 +38,8 @@ function Home(): JSX.Element {
             >
               Strava
             </a>{" "}
-            on my website, redesigning my website using React, and developing a
-            medical appointment scheduling Telegram/Facebook Messenger bot.
+            on my website, building an IOT LED light control system, and online
+            coursework in deep learning.
           </li>
         </ul>
       </div>

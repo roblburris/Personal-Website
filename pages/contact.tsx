@@ -1,7 +1,7 @@
 import React from "react";
 import Template from "../components/template";
 
-function Home(): JSX.Element {
+const Home: React.FC = () => {
   return (
     <Template>
       <div>

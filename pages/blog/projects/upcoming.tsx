@@ -1,7 +1,7 @@
 import React from "react";
 import Template from "../../../components/template";
 
-function Blog(): JSX.Element {
+const Blog: React.FC = () => {
   return (
     <Template>
       <div>
