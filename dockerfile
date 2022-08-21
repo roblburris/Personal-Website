@@ -1,13 +1,19 @@
-FROM node:10
+FROM alpine:latest
 WORKDIR /Users/RL/Documents/csprojects/react-website
 
-COPY package*.json ./
-RUN npm install -g
-COPY . .
+RUN apk add --update yarn
+
+COPY next-env.d.ts .
+COPY next.config.js .
+COPY package.json .
+COPY tsconfig.json .
+COPY yarn.lock .
+COPY public/ ./public/
+COPY pages ./pages/
+COPY components ./components/
+
+RUN yarn
+RUN yarn run build
+
 EXPOSE 3000
-
-RUN npm install --save-dev typescript @types/react @types/node
-RUN npm run build
-
-
-CMD [ "npm", "run", "start"]
+CMD [ "yarn", "run", "start"]

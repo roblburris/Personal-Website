@@ -63,6 +63,17 @@ const Navbar: React.FC = () => {
           Home
         </a>
       </Link>
+
+      <a
+        className={styles.navbar}
+        href="/about"
+        onMouseEnter={changeBackground}
+        onMouseLeave={revertBackground}
+      >
+        {" "}
+        About{" "}
+      </a>
+      
       <a
         className={styles.navbar}
         href="/resume.pdf"
@@ -93,15 +104,7 @@ const Navbar: React.FC = () => {
         Blog{" "}
       </a>
 
-      <a
-        className={styles.navbar}
-        href="/contact"
-        onMouseEnter={changeBackground}
-        onMouseLeave={revertBackground}
-      >
-        {" "}
-        Contact{" "}
-      </a>
+
     </div>
   );
 
@@ -183,6 +186,24 @@ const Navbar: React.FC = () => {
           >
             <a
               style={{ textDecoration: "none", color: "white" }}
+              href="/about"
+            >
+              About
+            </a>
+          </div>
+
+          <div
+            style={{
+              gridRow: 3,
+              gridColumn: 3,
+              border: "solid",
+              borderBottom: "solid",
+              borderColor: "white",
+              borderWidth: "1px",
+            }}
+          >
+            <a
+              style={{ textDecoration: "none", color: "white" }}
               href="/resume.pdf"
             >
               Resume
@@ -191,7 +212,7 @@ const Navbar: React.FC = () => {
 
           <div
             style={{
-              gridRow: 3,
+              gridRow: 4,
               gridColumn: 3,
               border: "solid",
               borderBottom: "solid",
@@ -209,7 +230,7 @@ const Navbar: React.FC = () => {
 
           <div
             style={{
-              gridRow: 4,
+              gridRow: 5,
               gridColumn: 3,
               border: "solid",
               borderBottom: "solid",
@@ -222,23 +243,7 @@ const Navbar: React.FC = () => {
             </a>
           </div>
 
-          <div
-            style={{
-              gridRow: 5,
-              gridColumn: 3,
-              border: "solid",
-              borderBottom: "solid",
-              borderColor: "white",
-              borderWidth: "1px",
-            }}
-          >
-            <a
-              style={{ textDecoration: "none", color: "white" }}
-              href="/contact"
-            >
-              Contact
-            </a>
-          </div>
+
         </div>
       </div>
     </div>

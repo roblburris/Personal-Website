@@ -27,6 +27,27 @@ const Projects: React.FC = () => {
           }}
         />
         
+        <h3 style={{ textDecoration: "underline" }}>
+          {" "}
+          <a
+            href="https://github.com/roblburris/FaceRecogBackend"
+            style={{ color: "black" }}
+          >
+            AudioBolt - Live Subtitling
+          </a>
+        </h3>
+        <p>
+          In February 2021, a friend and I attended TreeHacks, an annual Hackathon at Stanford University, where we built a desktop app that provided live subtitling for any audio playing on your computer. We wanted to build something that helped make computer usage more accesible for everyone. I worked on the backend of AudioBolt where I deployed the state of the art machine learning model we were using and setup a simple TCP server in Python to receive audio data from clients. 
+        </p>
+        
+        <hr
+          style={{
+            borderWidth: 0,
+            height: "1px",
+            color: "gray",
+            backgroundColor: "#e4e8eb",
+          }}
+        />
         
         <h3 style={{ textDecoration: "underline" }}>
           {" "}
@@ -38,7 +59,7 @@ const Projects: React.FC = () => {
           </a>
         </h3>
         <p>
-          In October 2020, a friend and I attended Dubhacks, an annual Hackathon at the University of Washington, where we built a tool for easily getting general information on people in a Zoom call. With everything going online due to the ongoing COVID-19 pandemic, we wanted to create something that would make it easier for people in their Zoom meetings to remember people so we ended building FaceNote which is an Electron.js desktop app that uses facial recognition to return details on a participant in a Zoom call. I worked on the backend of FaceNote where I designed the database using MongoDB and integrated it into our Go HTTP backend. 
+          In October 2020, a friend and I attended Dubhacks, an annual Hackathon at the University of Washington, where we built a tool for easily getting general information on people in a Zoom call. With everything going online due to the ongoing COVID-19 pandemic, we wanted to create something that would make it easier for people in their Zoom meetings to remember people so we ended building FaceNote which is an Electron.js desktop app that uses facial recognition to return details on a participant in a Zoom call. I worked on the backend of FaceNote where I designed the database schema using MongoDB and integrated it into our Go HTTP backend. 
         </p>
         
         <hr
